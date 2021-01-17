@@ -1,0 +1,53 @@
+<div class="container mt-4">
+    <form id='mainForm' action="/details" method="POST">
+        <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Choose competition</label>
+        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" name="competition" required>
+            <option selected>Choose...</option>
+            <option value="tennis">One</option>
+            <option value="cricket">Two</option>
+            <option value="football">Three</option>
+            <option value="kabaddi">four</option>
+        </select>
+
+        <div class="form-check form-check-inline my-1">
+            <input class="form-check-input" type="radio" name="isIndividual" id="inlineRadio1" value="individual"
+                checked>
+            <label class="form-check-label" for="inlineRadio1">Individual</label>
+        </div>
+        <div class="form-check form-check-inline my-1">
+            <input class="form-check-input" type="radio" name="isIndividual" id="inlineRadio2" value="team">
+            <label class="form-check-label" for="inlineRadio2">Team</label>
+        </div>
+        <div></div>
+        <label class="my-1 mr-2" id="teamlabel">Enter Teammates' email address</label>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Email" name="mate1" id="mate1">
+            <div class="input-group-append">
+                <button class="btn btn-danger" type="button">delete</button>
+            </div>
+        </div>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Email" name="mate2" id="mate2">
+            <div class="input-group-append">
+                <button class="btn btn-danger" type="button">delete</button>
+            </div>
+        </div>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Email" name="mate3" id="mate3">
+            <div class="input-group-append">
+                <button class="btn btn-danger" type="button">delete</button>
+            </div>
+        </div>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Email" name="mate4" id="mate4">
+            <div class="input-group-append">
+                <button class="btn btn-danger" type="button">delete</button>
+            </div>
+        </div>
+        <div id="teamlabel"></div>
+        <div id="teammates"></div>
+        <div id="addButton"></div>
+        <button type="submit" class="btn btn-primary my-1">Submit</button>
+    </form>
+
+</div>
